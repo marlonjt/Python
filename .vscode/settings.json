@@ -6,7 +6,8 @@
         "pady",
         "pathptr",
         "suma",
-        "uuidstr"
+        "uuidstr",
+        "windll"
     ],
     "cSpell.language": "en,es"
 }
