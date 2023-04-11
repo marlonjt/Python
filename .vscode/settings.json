@@ -1,0 +1,12 @@
+{
+    "python.formatting.provider": "black",
+    "cSpell.words": [
+        "FOLDERID",
+        "padx",
+        "pady",
+        "pathptr",
+        "suma",
+        "uuidstr"
+    ],
+    "cSpell.language": "en,es"
+}
