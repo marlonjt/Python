@@ -1,0 +1,5 @@
+print("Calcular peso y altura")
+peso = int(input("Ingrese su peso: "))
+altura = float(input("Ingrese su altura: "))
+masa_corporal = peso / (altura * altura)
+print("Tu índice de masa corporal es donde " + str(round(masa_corporal, 2)))
