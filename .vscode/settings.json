@@ -1,5 +1,4 @@
 {
-    "python.formatting.provider": "none",
     "cSpell.words": [
         "FOLDERID",
         "padx",
@@ -12,5 +11,16 @@
     "cSpell.language": "en,es",
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
-    }
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "editor.scrollbar.vertical": "auto",
+    "editor.overviewRulerBorder": true,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.formatOnSave": true,
+    "editor.guides.indentation": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "git.autofetch": true,
+    "editor.matchBrackets": "never",
+    "workbench.colorTheme": "Andromeda Bordered",
+    "workbench.sideBar.location": "right",
 }
