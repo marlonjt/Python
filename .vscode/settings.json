@@ -1,5 +1,5 @@
 {
-    "python.formatting.provider": "black",
+    "python.formatting.provider": "none",
     "cSpell.words": [
         "FOLDERID",
         "padx",
@@ -9,5 +9,8 @@
         "uuidstr",
         "windll"
     ],
-    "cSpell.language": "en,es"
+    "cSpell.language": "en,es",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    }
 }

@@ -25,4 +25,3 @@ for n in range(len(myList)):
             if myList[n] == myList[r] and myList[n] not in res:
                 res.append(myList[n])
                 print(res)
-
