@@ -22,5 +22,5 @@
     "git.autofetch": true,
     "editor.matchBrackets": "never",
     "workbench.colorTheme": "Andromeda Bordered",
-    "workbench.sideBar.location": "right",
+    "workbench.sideBar.location": "left",
 }
