@@ -25,7 +25,7 @@ while True:
         intentos += 1
         if intentos == 3:
             print(
-                "gracias por jugar te quedaste sin intentos, el número correcto es el :"
+                "gracias por jugar te quedaste sin intentos, el número correcto es el: "
                 + str(num_ran)
             )
             break
