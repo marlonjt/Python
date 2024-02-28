@@ -62,6 +62,9 @@ print(es_primo(num))
 # Serie de fibonacci con función
 
 
+n = int(input("ingrese un numero para imprimir la serie"))
+
+
 def fibonacci(n):
     a, b = 0, 1
     while a < n:
@@ -69,4 +72,4 @@ def fibonacci(n):
         a, b = b, a + b
 
 
-fibonacci(10)
+fibonacci(n)

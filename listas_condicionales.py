@@ -87,3 +87,19 @@ for n in range(len(myList)):
             if myList[n] == myList[r] and myList[n] not in res:
                 res.append(myList[n])
                 print(res)
+
+# lista que devuelve el primer valor y el ultimo de un array
+
+# def lista():
+#     a = [5, 10, 15, 20, 25]
+#     return a[0::4]
+
+
+# print(lista())
+
+
+def list_ends(a_list):
+    return [a_list[0], a_list[len(a_list) - 1]]
+
+
+print(list_ends([5, 10, 15, 20, 25]))
