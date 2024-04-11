@@ -18,7 +18,10 @@ def prueba(nota):
 
 print(prueba(int(alumno)))
 
-# Calcular año bisiesto aplicando condicionales
+"""
+Calcular año bisiesto aplicando condicionales y operadores.
+"""
+
 year = int(input("ingresa el año para comprobar si es bisiesto: "))
 # cuatro = year % 4
 # cien = year % 100
@@ -42,8 +45,9 @@ elif (
 ):  # divisible entre 4, 100 y 400
     print("Es bisiesto por que residuo de 4 es 0, 100 es 0 y 400 es 0")
 
-
-# Números primos dentro de la función
+"""
+Números primos dentro de la función y aplicando condicionales.
+"""
 
 num = int(input("ingrese el numero: "))
 
@@ -59,7 +63,9 @@ def es_primo(num):
 
 print(es_primo(num))
 
-# Serie de fibonacci con función
+"""
+Serie de fibonacci con función y condicional while
+"""
 
 
 n = int(input("ingrese un numero para imprimir la serie"))
