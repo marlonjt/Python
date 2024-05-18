@@ -1,3 +1,3 @@
 Ejercicios de Programación
 
-Aplicando Python y git para ejercios prácticos 
+Aplicando Python y git para ejercicios prácticos 
