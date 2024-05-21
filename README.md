@@ -14,3 +14,5 @@ Iniciando en Python como de lenguaje de programación y mejorando la lógica.
     - Piedra papel o tijera.
 
 Aplicando conceptos básicos de programación y realizando ejercicios para una mejor comprensión de lenguaje. 
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
