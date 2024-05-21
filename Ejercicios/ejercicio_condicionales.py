@@ -64,7 +64,7 @@ def es_primo(num):
 print(es_primo(num))
 
 """
-Serie de fibonacci con función y condicional while
+Serie de Fibonacci con función y condicional while
 """
 
 
