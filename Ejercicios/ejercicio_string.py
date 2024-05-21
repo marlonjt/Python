@@ -2,22 +2,28 @@
 Utilizar funciones sobre variables string y calculando operaciones matemáticas.
 """
 
-# imprimir el nombre por el numero ingresado
-# nombre = input("ingrese su nombre: ")
-# numero = int(input("ingrese el numero:"))
-# print((nombre + "\n") * numero) #end python \n
-# print(nombre.capitalize()) #primera letra en mayúsculas
-# print(nombre.lower()) #todo minúsculas
-# print(nombre.upper()) #todo mayúsculas
-# print(nombre.upper(),"tiene", len(nombre),"letras")
-# frase = input("ingrese frase: ")
-# lista = frase.split()
-# lista.reverse() #reverse método para revertir listas
-# print(frase[::-1]) # ::-1 sirve para revertir una lista o tuple iterable[inicio:fin:paso]
-# vocal = input("ingresa vocal: ")
-# print(frase.replace(vocal, vocal.upper())) # replace método para remplazar palabras
-# email = input("ingresa usuario: ")
-# print(email[: email.find("@")] + "@ceu.es")
+# imprimir el nombre por el número ingresado.
+nombre = input("ingrese su nombre: ")
+numero = int(input("ingrese el numero:"))
+print((nombre + "\n") * numero)  # \n salto de línea
+print(nombre.capitalize())  # primera letra en mayúsculas
+print(nombre.lower())  # todo minúsculas
+print(nombre.upper())  # todo mayúsculas
+print(nombre.upper(), "tiene", len(nombre), "letras")
+
+frase = input("ingrese frase: ")
+lista = frase.split()
+lista.reverse()  # reverse método para revertir listas
+# ::-1 sirve para revertir una lista o tuple iterable[inicio:fin:paso]
+print(frase[::-1])
+
+# replace método para remplazar palabras.
+vocal = input("ingresa vocal: ")
+print(frase.replace(vocal, vocal.upper()))
+
+# Concatena string con un dominio.
+email = input("ingresa usuario: ")
+print(email[: email.find("@")] + "@ceu.es")
 
 """
 Calcular masa corporal ingresando datos y operadores.
@@ -31,7 +37,6 @@ print("Tu índice de masa corporal es donde " + str(round(masa_corporal, 2)))
 """
 frase ingresada y salida en sentido contrario.
 """
-word = input("ingrese la para imprimir en reversa: ")
 
 
 def phrase_reverse(word):
@@ -40,7 +45,7 @@ def phrase_reverse(word):
 
 
 # aplicación de join para que imprima en forma de string y no de lista.
-print(" ".join(phrase_reverse(word)))
+print(" ".join(phrase_reverse(word=input("ingrese la para imprimir en reversa: "))))
 
 """
 aplicando método reverse en función de frase.
