@@ -1,4 +1,7 @@
 from enum import Enum
+from datetime import datetime
+import time
+import random
 
 
 def called(n):
@@ -29,10 +32,9 @@ class Estado_Pedido(Enum):
 
 class Pedido:
 
-    status = Estado_Pedido.EN_PROCESO
-
     def __init__(self, name: str):
         self.name = name
+        self.status = Estado_Pedido.EN_PROCESO
 
     def pedidos(self, func):
         mensaje = func()
@@ -47,6 +49,17 @@ class Pedido:
         return self.mensaje_pedido()
 
 
-plato = Pedido("encebollado")
-plato.mensaje_pedido()
-plato.pedidos(plato.proceso_confirmación)
+# Crear tres instancias de Pedido
+plato1 = Pedido("encebollado")
+plato2 = Pedido("cangrejo")
+plato3 = Pedido("arroz con menestra")
+
+# Lista de pedidos
+platos = [plato1, plato2, plato3]
+
+# Confirmar pedidos cada 5 segundos
+for plato in platos:
+    print(f"Inicio: {datetime.now()}, {plato.mensaje_pedido()}")
+    plato.pedidos(plato.proceso_confirmación)
+    proceso = random.randint(1, 10)
+    time.sleep(proceso)
