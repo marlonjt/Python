@@ -71,3 +71,37 @@ def duplicado_v2(x):
 print(lista)
 print(duplicado(lista))
 print(duplicado_v2(lista))
+
+
+def string_lista(spam):
+    if len(spam) == 0:
+        return ""
+    elif len(spam) == 1:
+        return spam[0]
+    else:
+        return ", ".join(spam[:-1]) + " y " + spam[-1]
+
+
+spam = ["manzanas", "bananas", "tofu", "gatos"]
+spam = ["manzanas", "bananas"]
+
+print(string_lista(spam))
+
+
+grid = [
+    [".", ".", ".", ".", ".", "."],
+    [".", "O", "O", ".", ".", "."],
+    ["O", "O", "O", "O", ".", "."],
+    ["O", "O", "O", "O", "O", "."],
+    [".", "O", "O", "O", "O", "O"],
+    ["O", "O", "O", "O", "O", "."],
+    ["O", "O", "O", "O", ".", "."],
+    [".", "O", "O", ".", ".", "."],
+    [".", ".", ".", ".", ".", "."],
+]
+
+# Recorremos las columnas
+for col in range(len(grid[0])):  # El número de columnas es len(grid[0])
+    for row in range(len(grid)):  # El número de filas es len(grid)
+        print(grid[row][col], end="")  # Imprimimos el carácter sin salto de línea
+    print()  # Al final de cada columna, imprimimos un salto de línea
