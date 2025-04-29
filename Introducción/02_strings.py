@@ -1,6 +1,4 @@
-"""
-Operaciones
-"""
+### Strings ###
 
 s1 = "Hola"
 s2 = "Python"
@@ -36,8 +34,8 @@ print(s2.split("t"))
 # Mayúsculas, minúsculas y letras en mayúsculas
 print(s1.upper())
 print(s1.lower())
-print("Marlon Joel".title())
-print("Marlon Joel".capitalize())
+print("marlon joel".title())
+print("marlon joel".capitalize())
 
 # Eliminación de espacios al principio y al final
 print(" Marlon Joel ".strip())
@@ -93,6 +91,7 @@ Extra
 """
 
 
+# check("amor", "roma")
 def check(word1: str, word2: str):
 
     # Palíndromos
@@ -125,4 +124,3 @@ def check(word1: str, word2: str):
 
 
 check("radar", "pythonpythonpythonpython")
-# check("amor", "roma")

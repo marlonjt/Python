@@ -1,14 +1,8 @@
-def DNA_strand(dna):
-    for char in dna:
-        if char == "G":
-            dna.replace("G", "C")
-        elif char == "C":
-            dna.replace("G", "C")
-        elif char == "A":
-            dna.replace("A", "T")
-        elif char == "T":
-            dna.replace("T", "A")
-    return " ".join(char)
+def reverse_words(text):
+    r = []
+    for res in text.split(" "):
+        r.append(res[::-1])
+    return " ".join(r), type(r)
 
 
-print(DNA_strand("GTAT"))
+print(reverse_words("  double  spaced  words  "))
