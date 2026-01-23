@@ -1,8 +1,4 @@
-def reverse_words(text):
-    r = []
-    for res in text.split(" "):
-        r.append(res[::-1])
-    return " ".join(r), type(r)
+test_claro = [(1, 530, 490), (2, 510, 480)]
+todas_las_subidas = [t[1] for t in test_claro]
 
-
-print(reverse_words("  double  spaced  words  "))
+print(todas_las_subidas)
