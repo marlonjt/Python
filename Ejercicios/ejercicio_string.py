@@ -39,26 +39,28 @@ frase ingresada y salida en sentido contrario.
 """
 
 
-def phrase_reverse(word):
+def phrase_reverse_slice(word):
     result = word.split()  # eliminar elementos de string y convirtiéndolo en un lista.
     return result[::-1]  # devolver la lista en sentido contrario.
 
 
 # aplicación de join para que imprima en forma de string y no de lista.
-print(" ".join(phrase_reverse(word=input("ingrese la para imprimir en reversa: "))))
+print(
+    " ".join(phrase_reverse_slice(word=input("ingrese la para imprimir en reversa: ")))
+)
 
 """
 aplicando método reverse en función de frase.
 """
 
 
-def phrase_reverse(word):
+def phrase_reverse_method(word):
     result = word.split()  # eliminar elementos de string y convirtiéndolo en un lista.
     result.reverse()
     return " ".join(result)
 
 
-print(phrase_reverse(word=input("ingrese una frase para imprimir: ")))
+print(phrase_reverse_method(word=input("ingrese una frase para imprimir: ")))
 
 
 """

@@ -34,7 +34,8 @@ def agenda():
             case "2":
                 name = input("ingresa nombre del contacto: ")
                 create_contact()
-                print(f'Contacto {name} con el {agenda_dict[name]} fue guardado')
+                if name in agenda_dict:
+                    print(f'Contacto {name} con el {agenda_dict[name]} fue guardado')
             case "3":
                 name = input("Introduce el nombre del contacto a actualizar: ")
                 if name in agenda_dict:

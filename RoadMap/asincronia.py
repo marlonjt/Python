@@ -2,7 +2,6 @@ import asyncio
 import time
 from datetime import datetime
 
-
 """
 Funciones async son tareas a realizar para la carga de trabajo o que se ejecuten en paralelo estableciendo tiempos de espera.
 """
