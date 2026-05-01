@@ -1,18 +1,15 @@
-# Introducción en Python. &nbsp;&nbsp;<img src="./Imagen/coding.gif" width="100" height="70" />
+# 🐍 Curso de Python
 
-Iniciando en Python como de lenguaje de programación y mejorando la lógica.
+Aprendiendo Python desde cero: fundamentos, OOP, algoritmos y más.
 
-1. Primeros pasos:
-    - Variables de python. 
-    - Listas de python.
-    - Diccionarios de python.
-    - Funciones de python.
+## 📚 Contenido
 
-2. Ejercicios en Python:
-    - Adivinar un número random.
-    - Agenda de contactos. 
-    - Piedra papel o tijera.
+| Módulo | Temas | Estado |
+|--------|-------|--------|
+| Introducción | Variables, strings, listas, tuplas, sets, diccionarios, condicionales, loops, funciones, clases, excepciones, módulos, archivos | ✅ |
+| RoadMap | Lambdas, decoradores, OOP, herencia, recursividad, async, HTTP, JSON/XML, regex, pruebas unitarias | ✅ |
+| Ejercicios | Agenda, juegos, algoritmos, estructuras de datos | ✅ |
+| Proyectos | — | 📋 Próximamente |
 
-Aplicando conceptos básicos de programación y realizando ejercicios para una mejor comprensión de lenguaje. 
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
+## 🛠️ Tecnologías
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
