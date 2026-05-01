@@ -1,31 +1,25 @@
 import random
 
-num = int(input("Ingrese un numero del 1 al 9: "))
-
-num_ran = random.randint(1, 10)
-
-intentos = 0
+random_number = random.randint(1, 9)
+attempts = 0
+number = int(input("Enter a number from 1 to 9: "))
 
 while True:
-    if num > num_ran:
-        print("Ops el número es mayor al número aleatorio!!")
-    elif num < num_ran:
-        print("Ops el número es menor al número aleatorio!!")
-    elif num == num_ran:
-        print("Adivinaste el número !!")
-        print("Gracias por jugar !!!")
+    if number == random_number:
+        print(f"You guessed a number!!")
         break
+    elif number > random_number:
+        print(f"Oops, the number is greater than the random number!!")
+    elif number < random_number:
+        print(f"Oops, the number is less than the random number!!")
 
     txt = input("terminar juego? S/N ")
     if txt.lower() == "s":
-        print("gracias por jugar")
+        print(f"Thank for playing")
         break
     elif txt.lower() == "n":
-        num = int(input("ingresa nuevamente un número: "))
-        intentos += 1
-        if intentos == 3:
-            print(
-                "gracias por jugar te quedaste sin intentos, el número correcto es el: "
-                + str(num_ran)
-            )
+        number = int(input("Enter a number again: "))
+        attempts += 1
+        if attempts == 3:
+            print(f"Thank for playing, max attempts. Answer: {random_number}")
             break

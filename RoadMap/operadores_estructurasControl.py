@@ -90,8 +90,8 @@ while i <= 10:
 # Manejo de excepciones
 try:
     print(10 / 0)
-except:
-    print("Se ha producido un error")
+except ZeroDivisionError:
+    print("No se puede dividir entre cero")
 finally:
     print("Ha finalizado el manejo de excepciones")
 

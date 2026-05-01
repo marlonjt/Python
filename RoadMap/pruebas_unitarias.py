@@ -51,4 +51,5 @@ class TestDict(unittest.TestCase):
         self.assertIsInstance(self.data["programming_languages"], list)
 
 
-unittest.main()
+if __name__ == "__main__":
+    unittest.main()

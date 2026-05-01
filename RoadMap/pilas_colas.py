@@ -23,8 +23,6 @@ stack_item = stack[len(stack) - 1]
 del stack[len(stack) - 1]
 print(stack_item)
 
-print(stack.pop())
-
 print(stack)
 
 # cola/queue -> se elimina el elemento primer elemento de un lista
