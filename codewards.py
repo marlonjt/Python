@@ -1,17 +1,20 @@
-def increment_string(string):
+def dir_reduce(arr):
 
-    stripped = string.rstrip("1234567890")
-    ints = string[len(stripped) :]
+    OPUESTOS = {
+        "NORTH": "SOUTH",
+        "SOUTH": "NORTH",
+        "EAST": "WEST",
+        "WEST": "EAST",
+    }
+    pila = []
+    for camino in arr:
+        if pila and pila[-1] == OPUESTOS[camino]:
+            pila.pop()
+        else:
+            pila.append(camino)
 
-    if len(ints) == 0:
-        return string + "1"
-    else:
-        length = len(ints)
-        new_ints = 1 + int(ints)
-        new_ints = str(new_ints).zfill(length)
-        return stripped + new_ints
+    return pila
 
 
-print(increment_string("foo"))  # foo1
-print(increment_string("foobar23"))  # foobar24
-print(increment_string("foo099"))  # foo100
+camino = ["NORTH", "EAST", "WEST", "SOUTH", "WEST", "WEST"]
+print(dir_reduce(camino))
